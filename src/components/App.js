@@ -15,7 +15,7 @@ const App = () => {
       <label>Enter your name:</label> <br></br>
       <input onChange={inputChange} type='text'></input>
       {text && 
-        <p>{text}</p>
+        <p>Hello {text}!</p>
       }
     </div>
   )
