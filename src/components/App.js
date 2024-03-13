@@ -6,7 +6,7 @@ const App = () => {
   const [text, setText] = useState('');
 
   const inputChange = (event) => {
-    setText(event.target.value);
+    setText(`Hello ${event.target.value}`);
   }
 
   return (
@@ -15,7 +15,7 @@ const App = () => {
       <label>Enter your name:</label> <br></br>
       <input onChange={inputChange} type='text'></input>
       {text && 
-        <p>Hello {text}!</p>
+        <p>{text}!</p>
       }
     </div>
   )
